@@ -1,10 +1,10 @@
 import torch
 from torch import nn, optim
 
-def train_evaluate_model(model, train_loader, test_loader, device, epochs=10, lr=0.001):
+def train_evaluate_model(model, train_loader, test_loader, device, epochs=10, lr=0.0005):
     model = model.to(device)
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=lr)
+    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=1e-5)
 
     train_losses = []
     test_accuracies = []

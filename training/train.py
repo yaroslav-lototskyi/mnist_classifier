@@ -1,12 +1,12 @@
 import torch
 
-def train_model(model, train_loader, device, epochs=10, lr=0.001):
+def train_model(model, train_loader, device, epochs=10, lr=0.0005):
     model = model.to(device)
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+    optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=1e-5)
 
     train_losses = []
-
+    print("Training model...")
     for epoch in range(epochs):
         model.train()
         running_loss = 0.0
