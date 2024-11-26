@@ -1,0 +1,59 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Log files and debug artifacts
+*.log
+*.csv
+*.out
+*.err
+
+# Virtual environment directories
+venv/
+env/
+*.env
+*.venv
+
+# IDE settings and project files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Model files and checkpoints
+*.h5
+*.ckpt
+*.onnx
+model.pth
+checkpoints/
+
+# Training and evaluation logs
+logs/
+*.tfevents.*
+
+# Data files and archives
+data/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Package cache and build files
+*.egg-info/
+*.eggs
+.Python
+pip-log.txt
+
+# PyTorch cache and models
+torch_cache/
+*.pt
+*.pth
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System cache and temporary files
+.DS_Store
+Thumbs.db
