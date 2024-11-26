@@ -48,4 +48,7 @@ Follow these steps to set up and run the project:
 - python -m scripts.test_visualize_model
 - python -m scripts.train_test_model
 
+2. **Notebooks**:
+- You can use this repo in google colab. Use notebooks/mnist_training.ipynb
+
 
